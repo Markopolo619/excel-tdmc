@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+* {
+  padding: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+.login_main {
+  padding: 20px;
+}
+
+.heading_banner {
+  text-align: center;
+}
+.logo {
+  height: 100px;
+  width: 340px;
+}
+
+.text_heading_banner {
+  font-family: "Inter", "sans-serif";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.emailAddress_label,
+.password_label {
+  font-weight: bold;
+}
+
+.login_forms {
+  padding-left: 20px;
+}
+
+.email_emailAddress_label,
+.passwordAddress_label {
+  width: 20em;
+  height: 40px;
+  border: black solid 5px;
+  border-radius: 10px;
+}
+
+.email_emailAddress_label::placeholder {
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.item_buttons {
+  text-align: center;
+}
+
+.login_actual_button,
+.login_actual_button:hover {
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: "Inter", "sans-serif";
+  width: 90px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.signup_actual_button,
+.signup_actual_button:hover {
+  width: 110px;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: "Inter", "sans-serif";
+  height: 40px;
+  cursor: pointer;
+}
+
+.itemHome {
+  border: 5px black solid;
+}
+
+.dynamicIsland {
+  padding-left: 100px;
+}
+
+.logoutButton {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.favouriteStar {
+  font-size: 20px;
+  fill: #ff0;
+  stroke-width: 7px;
+  stroke: #000000;
+}
+
+Link{
+  text-decoration: none;
+  color: black;
+
+}
+
+.dynamicIsland{
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  border-radius: 40px;
+  position:relative;
+  left: 7em;
+
+}
+
+.userName{
+  position: relative;
+  right:4em;
+}
+.profileIcon{
+  position: relative;
+  bottom: 3.8em;
+  left: 2.9em;
+  background-color: aquamarine;
+  border-radius: 100%;
+  border: 5px solid black;
+  width: 35px;
+  height: 35px;
+}
+

@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 
 * {
   padding: 5px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .login_main {
@@ -74,51 +74,21 @@
   cursor: pointer;
 }
 
-.itemHome {
-  border: 5px black solid;
+Link {
+  text-decoration: none;
+  color: black;
 }
 
 .dynamicIsland {
-  padding-left: 100px;
-}
-
-.logoutButton {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-}
-
-.favouriteStar {
-  font-size: 20px;
-  fill: #ff0;
-  stroke-width: 7px;
-  stroke: #000000;
-}
-
-Link{
-  text-decoration: none;
-  color: black;
-
-}
-
-.dynamicIsland{
-  width: 100px;
+  width: 150px;
   height: 50px;
   background-color: black;
   border-radius: 40px;
-  position:relative;
-  left: 7em;
-
 }
 
-.userName{
-  position: relative;
-  right:4em;
-}
-.profileIcon{
-  position: relative;
-  bottom: 3.8em;
-  left: 2.9em;
+.profileIcon {
+  position: fixed;
+  right: 45%;
   background-color: aquamarine;
   border-radius: 100%;
   border: 5px solid black;
@@ -126,3 +96,105 @@ Link{
   height: 35px;
 }
 
+@media only screen and (max-width: 856px) {
+  .DynamicItem {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1292px) {
+  .profileIcon {
+    position: fixed;
+    right: 44%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .profileIccon {
+    position: fixed;
+    right: 40%;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .profileIcon {
+    position: fixed;
+    right: 43%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .profileIcon {
+    position: fixed;
+    right: 42%;
+  }
+}
+
+.search {
+  margin: 20px;
+}
+
+.search > h3 {
+  font-weight: normal;
+}
+
+.search > h1,
+.search > h3 {
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 0 1px black;
+}
+
+.search > div {
+  display: inline-block;
+  position: relative;
+}
+
+.search > div:hover, .search > div > input:hover{
+  cursor: pointer;
+}
+
+.search > div > input:focus{
+  cursor: text;
+}
+
+.search > div:after {
+  content: "";
+  background: black;
+  width: 3px;
+  height: 25px;
+  position: absolute;
+  top: 38px;
+  right: 2px;
+  transform: rotate(135deg);
+}
+
+
+
+.search > div > input {
+  color: black;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: solid 7px black;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.search > div > input::placeholder {
+  color: black;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.search > div > input:focus::placeholder {
+  opacity: 1;
+}
+
+.search > div > input:focus,
+.search > div > input:not(:placeholder-shown) {
+  width: 500px;
+}
